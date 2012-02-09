@@ -1,11 +1,4 @@
-@STATIC;1.0;p;6;main.jt;267;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.ji;15;AppController.jt;181;
-objj_executeFile("Foundation/Foundation.j",NO);
-objj_executeFile("AppKit/AppKit.j",NO);
-objj_executeFile("AppController.j",YES);
-main=function(_1,_2){
-CPApplicationMain(_1,_2);
-};
-p;15;AppController.jt;3912;@STATIC;1.0;I;21;Foundation/CPObject.jt;3867;
+@STATIC;1.0;p;15;AppController.jt;3912;@STATIC;1.0;I;21;Foundation/CPObject.jt;3867;
 objj_executeFile("Foundation/CPObject.j",NO);
 var _1=objj_allocateClassPair(CPObject,"AppController"),_2=_1.isa;
 class_addIvars(_1,[new objj_ivar("theWindow"),new objj_ivar("header"),new objj_ivar("g1"),new objj_ivar("g2"),new objj_ivar("g3"),new objj_ivar("g4"),new objj_ivar("g5"),new objj_ivar("g6"),new objj_ivar("g7"),new objj_ivar("g8"),new objj_ivar("g9"),new objj_ivar("g10"),new objj_ivar("g11"),new objj_ivar("t1"),new objj_ivar("t2"),new objj_ivar("t3"),new objj_ivar("mainView"),new objj_ivar("signInView"),new objj_ivar("personalView"),new objj_ivar("username"),new objj_ivar("password"),new objj_ivar("welcome"),new objj_ivar("incorrectPassword"),new objj_ivar("forgotPasswordPopover"),new objj_ivar("loginButton"),new objj_ivar("zUser"),new objj_ivar("zPass")]);
@@ -70,3 +63,19 @@ with(_16){
 objj_msgSend(mainView,"replaceSubview:with:",personalView,signInView);
 }
 })]);
+p;6;main.jt;267;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.ji;15;AppController.jt;181;
+objj_executeFile("Foundation/Foundation.j",NO);
+objj_executeFile("AppKit/AppKit.j",NO);
+objj_executeFile("AppController.j",YES);
+main=function(_1,_2){
+CPApplicationMain(_1,_2);
+};
+p;6;test.jt;223;@STATIC;1.0;t;205;
+var _1=objj_allocateClassPair(CPObject,"MyClass"),_2=_1.isa;
+objj_registerClassPair(_1);
+class_addMethods(_1,[new objj_method(sel_getUid("mouseDown:"),function(_3,_4,_5){
+with(_3){
+alert("test");
+}
+})]);
+e;
